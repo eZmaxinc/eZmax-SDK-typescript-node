@@ -11,21 +11,15 @@
  */
 
 import { RequestFile } from './models';
-import { FieldEUserTypeSSPR } from './fieldEUserTypeSSPR';
 
 /**
-* Request for the /1/module/sspr/unlockAccount API Request
+* Request for the /2/module/authenticate/authenticate API Request
 */
-export class SsprUnlockAccountV1Request {
+export class AuthenticateAuthenticateV2Request {
     /**
     * The customer code assigned to your account
     */
     'pksCustomerCode': string;
-    /**
-    * The unique ID of the Language.  Valid values:  |Value|Description| |-|-| |1|French| |2|English|
-    */
-    'fkiLanguageID': number;
-    'eUserTypeSSPR': FieldEUserTypeSSPR;
     /**
     * The email address.
     */
@@ -35,9 +29,9 @@ export class SsprUnlockAccountV1Request {
     */
     'sUserLoginname'?: string;
     /**
-    * Hex Encoded Secret SSPR token
+    * A Password.  Must meet complexity requirements
     */
-    'binUserSSPRtoken': string;
+    'sPassword': string;
 
     static discriminator: string | undefined = undefined;
 
@@ -46,16 +40,6 @@ export class SsprUnlockAccountV1Request {
             "name": "pksCustomerCode",
             "baseName": "pksCustomerCode",
             "type": "string"
-        },
-        {
-            "name": "fkiLanguageID",
-            "baseName": "fkiLanguageID",
-            "type": "number"
-        },
-        {
-            "name": "eUserTypeSSPR",
-            "baseName": "eUserTypeSSPR",
-            "type": "FieldEUserTypeSSPR"
         },
         {
             "name": "sEmailAddress",
@@ -68,13 +52,13 @@ export class SsprUnlockAccountV1Request {
             "type": "string"
         },
         {
-            "name": "binUserSSPRtoken",
-            "baseName": "binUserSSPRtoken",
+            "name": "sPassword",
+            "baseName": "sPassword",
             "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return SsprUnlockAccountV1Request.attributeTypeMap;
+        return AuthenticateAuthenticateV2Request.attributeTypeMap;
     }
 }
 

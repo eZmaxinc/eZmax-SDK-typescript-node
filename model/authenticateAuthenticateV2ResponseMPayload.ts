@@ -11,25 +11,36 @@
  */
 
 import { RequestFile } from './models';
-import { ApikeyResponse } from './apikeyResponse';
 
 /**
-* Payload for the /1/object/apikey/createObject API Request
+* Payload for the /2/module/authenticate/authenticate API Request
 */
-export class ApikeyCreateObjectV1ResponseMPayload {
-    'a_objApikey': Array<ApikeyResponse>;
+export class AuthenticateAuthenticateV2ResponseMPayload {
+    /**
+    * The Authorization key
+    */
+    'sAuthorization': string;
+    /**
+    * The secret key
+    */
+    'sSecret': string;
 
     static discriminator: string | undefined = undefined;
 
     static attributeTypeMap: Array<{name: string, baseName: string, type: string}> = [
         {
-            "name": "a_objApikey",
-            "baseName": "a_objApikey",
-            "type": "Array<ApikeyResponse>"
+            "name": "sAuthorization",
+            "baseName": "sAuthorization",
+            "type": "string"
+        },
+        {
+            "name": "sSecret",
+            "baseName": "sSecret",
+            "type": "string"
         }    ];
 
     static getAttributeTypeMap() {
-        return ApikeyCreateObjectV1ResponseMPayload.attributeTypeMap;
+        return AuthenticateAuthenticateV2ResponseMPayload.attributeTypeMap;
     }
 }
 

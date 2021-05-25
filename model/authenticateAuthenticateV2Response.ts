@@ -11,16 +11,16 @@
  */
 
 import { RequestFile } from './models';
-import { CommonGetAutocompleteV1ResponseMPayload } from './commonGetAutocompleteV1ResponseMPayload';
+import { AuthenticateAuthenticateV2ResponseMPayload } from './authenticateAuthenticateV2ResponseMPayload';
 import { CommonResponse } from './commonResponse';
 import { CommonResponseObjDebug } from './commonResponseObjDebug';
 import { CommonResponseObjDebugPayload } from './commonResponseObjDebugPayload';
 
 /**
-* Response for the /1/object/xxx/getAutocomplete API Request
+* Response for the /2/module/authenticate/authenticate API Request
 */
-export class CommonGetAutocompleteV1Response {
-    'mPayload': Array<CommonGetAutocompleteV1ResponseMPayload>;
+export class AuthenticateAuthenticateV2Response {
+    'mPayload': AuthenticateAuthenticateV2ResponseMPayload;
     'objDebugPayload'?: CommonResponseObjDebugPayload;
     'objDebug'?: CommonResponseObjDebug;
 
@@ -30,7 +30,7 @@ export class CommonGetAutocompleteV1Response {
         {
             "name": "mPayload",
             "baseName": "mPayload",
-            "type": "Array<CommonGetAutocompleteV1ResponseMPayload>"
+            "type": "AuthenticateAuthenticateV2ResponseMPayload"
         },
         {
             "name": "objDebugPayload",
@@ -44,7 +44,7 @@ export class CommonGetAutocompleteV1Response {
         }    ];
 
     static getAttributeTypeMap() {
-        return CommonGetAutocompleteV1Response.attributeTypeMap;
+        return AuthenticateAuthenticateV2Response.attributeTypeMap;
     }
 }
 

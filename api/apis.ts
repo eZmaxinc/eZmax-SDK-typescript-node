@@ -1,5 +1,7 @@
 export * from './globalCustomerApi';
 import { GlobalCustomerApi } from './globalCustomerApi';
+export * from './moduleAuthenticateApi';
+import { ModuleAuthenticateApi } from './moduleAuthenticateApi';
 export * from './moduleSsprApi';
 import { ModuleSsprApi } from './moduleSsprApi';
 export * from './moduleUserApi';
@@ -35,4 +37,4 @@ export class HttpError extends Error {
 
 export { RequestFile } from '../model/models';
 
-export const APIS = [GlobalCustomerApi, ModuleSsprApi, ModuleUserApi, ObjectActivesessionApi, ObjectApikeyApi, ObjectEzsigndocumentApi, ObjectEzsignfolderApi, ObjectEzsignfoldersignerassociationApi, ObjectEzsignsignatureApi, ObjectFranchisebrokerApi, ObjectFranchiseofficeApi, ObjectFranchisereferalincomeApi, ObjectPeriodApi];
+export const APIS = [GlobalCustomerApi, ModuleAuthenticateApi, ModuleSsprApi, ModuleUserApi, ObjectActivesessionApi, ObjectApikeyApi, ObjectEzsigndocumentApi, ObjectEzsignfolderApi, ObjectEzsignfoldersignerassociationApi, ObjectEzsignsignatureApi, ObjectFranchisebrokerApi, ObjectFranchiseofficeApi, ObjectFranchisereferalincomeApi, ObjectPeriodApi];

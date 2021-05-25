@@ -10,6 +10,9 @@ export * from './apikeyRequest';
 export * from './apikeyRequestCompound';
 export * from './apikeyResponse';
 export * from './attemptResponse';
+export * from './authenticateAuthenticateV2Request';
+export * from './authenticateAuthenticateV2Response';
+export * from './authenticateAuthenticateV2ResponseMPayload';
 export * from './commonAudit';
 export * from './commonGetAutocompleteV1Response';
 export * from './commonGetAutocompleteV1ResponseMPayload';
@@ -137,6 +140,9 @@ import { ApikeyRequest } from './apikeyRequest';
 import { ApikeyRequestCompound } from './apikeyRequestCompound';
 import { ApikeyResponse } from './apikeyResponse';
 import { AttemptResponse } from './attemptResponse';
+import { AuthenticateAuthenticateV2Request } from './authenticateAuthenticateV2Request';
+import { AuthenticateAuthenticateV2Response } from './authenticateAuthenticateV2Response';
+import { AuthenticateAuthenticateV2ResponseMPayload } from './authenticateAuthenticateV2ResponseMPayload';
 import { CommonAudit } from './commonAudit';
 import { CommonGetAutocompleteV1Response } from './commonGetAutocompleteV1Response';
 import { CommonGetAutocompleteV1ResponseMPayload } from './commonGetAutocompleteV1ResponseMPayload';
@@ -285,6 +291,9 @@ let typeMap: {[index: string]: any} = {
     "ApikeyRequestCompound": ApikeyRequestCompound,
     "ApikeyResponse": ApikeyResponse,
     "AttemptResponse": AttemptResponse,
+    "AuthenticateAuthenticateV2Request": AuthenticateAuthenticateV2Request,
+    "AuthenticateAuthenticateV2Response": AuthenticateAuthenticateV2Response,
+    "AuthenticateAuthenticateV2ResponseMPayload": AuthenticateAuthenticateV2ResponseMPayload,
     "CommonAudit": CommonAudit,
     "CommonGetAutocompleteV1Response": CommonGetAutocompleteV1Response,
     "CommonGetAutocompleteV1ResponseMPayload": CommonGetAutocompleteV1ResponseMPayload,

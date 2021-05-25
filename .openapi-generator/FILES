@@ -3,6 +3,7 @@
 api.ts
 api/apis.ts
 api/globalCustomerApi.ts
+api/moduleAuthenticateApi.ts
 api/moduleSsprApi.ts
 api/moduleUserApi.ts
 api/objectActivesessionApi.ts
@@ -26,6 +27,9 @@ model/apikeyRequest.ts
 model/apikeyRequestCompound.ts
 model/apikeyResponse.ts
 model/attemptResponse.ts
+model/authenticateAuthenticateV2Request.ts
+model/authenticateAuthenticateV2Response.ts
+model/authenticateAuthenticateV2ResponseMPayload.ts
 model/commonAudit.ts
 model/commonGetAutocompleteV1Response.ts
 model/commonGetAutocompleteV1ResponseMPayload.ts
