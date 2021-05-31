@@ -78,6 +78,7 @@ export * from './ezsignsignerRequestCompoundContact';
 export * from './fieldEEzsigndocumentStep';
 export * from './fieldEEzsignfolderSendreminderfrequency';
 export * from './fieldEEzsignfolderStep';
+export * from './fieldEEzsignsignatureType';
 export * from './fieldEPhoneType';
 export * from './fieldEUserType';
 export * from './fieldEUserTypeSSPR';
@@ -208,6 +209,7 @@ import { EzsignsignerRequestCompoundContact } from './ezsignsignerRequestCompoun
 import { FieldEEzsigndocumentStep } from './fieldEEzsigndocumentStep';
 import { FieldEEzsignfolderSendreminderfrequency } from './fieldEEzsignfolderSendreminderfrequency';
 import { FieldEEzsignfolderStep } from './fieldEEzsignfolderStep';
+import { FieldEEzsignsignatureType } from './fieldEEzsignsignatureType';
 import { FieldEPhoneType } from './fieldEPhoneType';
 import { FieldEUserType } from './fieldEUserType';
 import { FieldEUserTypeSSPR } from './fieldEUserTypeSSPR';
@@ -265,13 +267,12 @@ let enumsMap: {[index: string]: any} = {
         "EzsigndocumentRequest.EEzsigndocumentFormatEnum": EzsigndocumentRequest.EEzsigndocumentFormatEnum,
         "EzsigndocumentRequestCompound.EEzsigndocumentSourceEnum": EzsigndocumentRequestCompound.EEzsigndocumentSourceEnum,
         "EzsigndocumentRequestCompound.EEzsigndocumentFormatEnum": EzsigndocumentRequestCompound.EEzsigndocumentFormatEnum,
-        "EzsignsignatureRequest.EEzsignsignatureTypeEnum": EzsignsignatureRequest.EEzsignsignatureTypeEnum,
-        "EzsignsignatureRequestCompound.EEzsignsignatureTypeEnum": EzsignsignatureRequestCompound.EEzsignsignatureTypeEnum,
         "EzsignsignerRequest.EEzsignsignerLogintypeEnum": EzsignsignerRequest.EEzsignsignerLogintypeEnum,
         "EzsignsignerRequestCompound.EEzsignsignerLogintypeEnum": EzsignsignerRequestCompound.EEzsignsignerLogintypeEnum,
         "FieldEEzsigndocumentStep": FieldEEzsigndocumentStep,
         "FieldEEzsignfolderSendreminderfrequency": FieldEEzsignfolderSendreminderfrequency,
         "FieldEEzsignfolderStep": FieldEEzsignfolderStep,
+        "FieldEEzsignsignatureType": FieldEEzsignsignatureType,
         "FieldEPhoneType": FieldEPhoneType,
         "FieldEUserType": FieldEUserType,
         "FieldEUserTypeSSPR": FieldEUserTypeSSPR,
