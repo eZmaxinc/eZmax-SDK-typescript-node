@@ -1,10 +1,12 @@
 import localVarRequest from 'request';
 
 export * from './activesessionGetCurrentV1Response';
+export * from './activesessionGetCurrentV1ResponseAllOf';
 export * from './activesessionGetCurrentV1ResponseMPayload';
 export * from './addressRequest';
 export * from './apikeyCreateObjectV1Request';
 export * from './apikeyCreateObjectV1Response';
+export * from './apikeyCreateObjectV1ResponseAllOf';
 export * from './apikeyCreateObjectV1ResponseMPayload';
 export * from './apikeyRequest';
 export * from './apikeyRequestCompound';
@@ -12,9 +14,11 @@ export * from './apikeyResponse';
 export * from './attemptResponse';
 export * from './authenticateAuthenticateV2Request';
 export * from './authenticateAuthenticateV2Response';
+export * from './authenticateAuthenticateV2ResponseAllOf';
 export * from './authenticateAuthenticateV2ResponseMPayload';
 export * from './commonAudit';
 export * from './commonGetAutocompleteV1Response';
+export * from './commonGetAutocompleteV1ResponseAllOf';
 export * from './commonGetAutocompleteV1ResponseMPayload';
 export * from './commonResponse';
 export * from './commonResponseError';
@@ -27,17 +31,25 @@ export * from './contactRequestCompound';
 export * from './contactRequestCompoundAllOf';
 export * from './contactinformationsRequest';
 export * from './contactinformationsRequestCompound';
+export * from './contactinformationsRequestCompoundAllOf';
 export * from './emailRequest';
 export * from './ezsigndocumentApplyEzsigntemplateV1Request';
 export * from './ezsigndocumentApplyEzsigntemplateV1Response';
 export * from './ezsigndocumentCreateObjectV1Request';
 export * from './ezsigndocumentCreateObjectV1Response';
+export * from './ezsigndocumentCreateObjectV1ResponseAllOf';
 export * from './ezsigndocumentCreateObjectV1ResponseMPayload';
 export * from './ezsigndocumentDeleteObjectV1Response';
 export * from './ezsigndocumentGetDownloadUrlV1Response';
+export * from './ezsigndocumentGetDownloadUrlV1ResponseAllOf';
 export * from './ezsigndocumentGetDownloadUrlV1ResponseMPayload';
 export * from './ezsigndocumentGetObjectV1Response';
+export * from './ezsigndocumentGetObjectV1ResponseAllOf';
 export * from './ezsigndocumentGetObjectV1ResponseMPayload';
+export * from './ezsigndocumentGetWordsPositionsV1Request';
+export * from './ezsigndocumentGetWordsPositionsV1Response';
+export * from './ezsigndocumentGetWordsPositionsV1ResponseAllOf';
+export * from './ezsigndocumentGetWordsPositionsV1ResponseMPayload';
 export * from './ezsigndocumentRequest';
 export * from './ezsigndocumentRequestCompound';
 export * from './ezsigndocumentResponse';
@@ -48,32 +60,40 @@ export * from './ezsignfolderCreateObjectV1Response';
 export * from './ezsignfolderCreateObjectV1ResponseMPayload';
 export * from './ezsignfolderDeleteObjectV1Response';
 export * from './ezsignfolderGetObjectV1Response';
+export * from './ezsignfolderGetObjectV1ResponseAllOf';
 export * from './ezsignfolderGetObjectV1ResponseMPayload';
 export * from './ezsignfolderRequest';
 export * from './ezsignfolderRequestCompound';
+export * from './ezsignfolderRequestCompoundAllOf';
 export * from './ezsignfolderResponse';
-export * from './ezsignfolderResponseAllOf';
 export * from './ezsignfolderResponseCompound';
 export * from './ezsignfolderSendV1Request';
 export * from './ezsignfolderSendV1Response';
 export * from './ezsignfoldersignerassociationCreateObjectV1Request';
 export * from './ezsignfoldersignerassociationCreateObjectV1Response';
+export * from './ezsignfoldersignerassociationCreateObjectV1ResponseAllOf';
 export * from './ezsignfoldersignerassociationCreateObjectV1ResponseMPayload';
 export * from './ezsignfoldersignerassociationDeleteObjectV1Response';
 export * from './ezsignfoldersignerassociationGetInPersonLoginUrlV1Response';
+export * from './ezsignfoldersignerassociationGetInPersonLoginUrlV1ResponseAllOf';
 export * from './ezsignfoldersignerassociationGetInPersonLoginUrlV1ResponseMPayload';
 export * from './ezsignfoldersignerassociationGetObjectV1Response';
+export * from './ezsignfoldersignerassociationGetObjectV1ResponseAllOf';
 export * from './ezsignfoldersignerassociationRequest';
 export * from './ezsignfoldersignerassociationRequestCompound';
+export * from './ezsignfoldersignerassociationRequestCompoundAllOf';
 export * from './ezsignsignatureCreateObjectV1Request';
 export * from './ezsignsignatureCreateObjectV1Response';
+export * from './ezsignsignatureCreateObjectV1ResponseAllOf';
 export * from './ezsignsignatureCreateObjectV1ResponseMPayload';
 export * from './ezsignsignatureDeleteObjectV1Response';
 export * from './ezsignsignatureGetObjectV1Response';
+export * from './ezsignsignatureGetObjectV1ResponseAllOf';
 export * from './ezsignsignatureRequest';
 export * from './ezsignsignatureRequestCompound';
 export * from './ezsignsignerRequest';
 export * from './ezsignsignerRequestCompound';
+export * from './ezsignsignerRequestCompoundAllOf';
 export * from './ezsignsignerRequestCompoundContact';
 export * from './fieldEEzsigndocumentStep';
 export * from './fieldEEzsignfolderSendreminderfrequency';
@@ -84,9 +104,11 @@ export * from './fieldEUserType';
 export * from './fieldEUserTypeSSPR';
 export * from './franchisereferalincomeCreateObjectV1Request';
 export * from './franchisereferalincomeCreateObjectV1Response';
+export * from './franchisereferalincomeCreateObjectV1ResponseAllOf';
 export * from './franchisereferalincomeCreateObjectV1ResponseMPayload';
 export * from './franchisereferalincomeRequest';
 export * from './franchisereferalincomeRequestCompound';
+export * from './franchisereferalincomeRequestCompoundAllOf';
 export * from './globalCustomerGetEndpointV1Response';
 export * from './multilingualApikeyDescription';
 export * from './phoneRequest';
@@ -106,9 +128,9 @@ export * from './uNUSEDEzsignsignatureEditObjectV1Request';
 export * from './uNUSEDEzsignsignatureEditObjectV1Response';
 export * from './userCreateEzsignuserV1Request';
 export * from './userCreateEzsignuserV1Response';
+export * from './userCreateEzsignuserV1ResponseAllOf';
 export * from './userCreateEzsignuserV1ResponseMPayload';
 export * from './userResponse';
-export * from './userResponseAllOf';
 export * from './webhookEzsignDocumentCompleted';
 export * from './webhookEzsignDocumentCompletedAllOf';
 export * from './webhookEzsignFolderCompleted';
@@ -117,6 +139,7 @@ export * from './webhookResponse';
 export * from './webhookUserUserCreated';
 export * from './webhookUserUserCreatedAllOf';
 export * from './websiteRequest';
+export * from './wordPositionResponse';
 
 import * as fs from 'fs';
 
@@ -132,10 +155,12 @@ export type RequestFile = string | Buffer | fs.ReadStream | RequestDetailedFile;
 
 
 import { ActivesessionGetCurrentV1Response } from './activesessionGetCurrentV1Response';
+import { ActivesessionGetCurrentV1ResponseAllOf } from './activesessionGetCurrentV1ResponseAllOf';
 import { ActivesessionGetCurrentV1ResponseMPayload } from './activesessionGetCurrentV1ResponseMPayload';
 import { AddressRequest } from './addressRequest';
 import { ApikeyCreateObjectV1Request } from './apikeyCreateObjectV1Request';
 import { ApikeyCreateObjectV1Response } from './apikeyCreateObjectV1Response';
+import { ApikeyCreateObjectV1ResponseAllOf } from './apikeyCreateObjectV1ResponseAllOf';
 import { ApikeyCreateObjectV1ResponseMPayload } from './apikeyCreateObjectV1ResponseMPayload';
 import { ApikeyRequest } from './apikeyRequest';
 import { ApikeyRequestCompound } from './apikeyRequestCompound';
@@ -143,9 +168,11 @@ import { ApikeyResponse } from './apikeyResponse';
 import { AttemptResponse } from './attemptResponse';
 import { AuthenticateAuthenticateV2Request } from './authenticateAuthenticateV2Request';
 import { AuthenticateAuthenticateV2Response } from './authenticateAuthenticateV2Response';
+import { AuthenticateAuthenticateV2ResponseAllOf } from './authenticateAuthenticateV2ResponseAllOf';
 import { AuthenticateAuthenticateV2ResponseMPayload } from './authenticateAuthenticateV2ResponseMPayload';
 import { CommonAudit } from './commonAudit';
 import { CommonGetAutocompleteV1Response } from './commonGetAutocompleteV1Response';
+import { CommonGetAutocompleteV1ResponseAllOf } from './commonGetAutocompleteV1ResponseAllOf';
 import { CommonGetAutocompleteV1ResponseMPayload } from './commonGetAutocompleteV1ResponseMPayload';
 import { CommonResponse } from './commonResponse';
 import { CommonResponseError } from './commonResponseError';
@@ -158,17 +185,25 @@ import { ContactRequestCompound } from './contactRequestCompound';
 import { ContactRequestCompoundAllOf } from './contactRequestCompoundAllOf';
 import { ContactinformationsRequest } from './contactinformationsRequest';
 import { ContactinformationsRequestCompound } from './contactinformationsRequestCompound';
+import { ContactinformationsRequestCompoundAllOf } from './contactinformationsRequestCompoundAllOf';
 import { EmailRequest } from './emailRequest';
 import { EzsigndocumentApplyEzsigntemplateV1Request } from './ezsigndocumentApplyEzsigntemplateV1Request';
 import { EzsigndocumentApplyEzsigntemplateV1Response } from './ezsigndocumentApplyEzsigntemplateV1Response';
 import { EzsigndocumentCreateObjectV1Request } from './ezsigndocumentCreateObjectV1Request';
 import { EzsigndocumentCreateObjectV1Response } from './ezsigndocumentCreateObjectV1Response';
+import { EzsigndocumentCreateObjectV1ResponseAllOf } from './ezsigndocumentCreateObjectV1ResponseAllOf';
 import { EzsigndocumentCreateObjectV1ResponseMPayload } from './ezsigndocumentCreateObjectV1ResponseMPayload';
 import { EzsigndocumentDeleteObjectV1Response } from './ezsigndocumentDeleteObjectV1Response';
 import { EzsigndocumentGetDownloadUrlV1Response } from './ezsigndocumentGetDownloadUrlV1Response';
+import { EzsigndocumentGetDownloadUrlV1ResponseAllOf } from './ezsigndocumentGetDownloadUrlV1ResponseAllOf';
 import { EzsigndocumentGetDownloadUrlV1ResponseMPayload } from './ezsigndocumentGetDownloadUrlV1ResponseMPayload';
 import { EzsigndocumentGetObjectV1Response } from './ezsigndocumentGetObjectV1Response';
+import { EzsigndocumentGetObjectV1ResponseAllOf } from './ezsigndocumentGetObjectV1ResponseAllOf';
 import { EzsigndocumentGetObjectV1ResponseMPayload } from './ezsigndocumentGetObjectV1ResponseMPayload';
+import { EzsigndocumentGetWordsPositionsV1Request } from './ezsigndocumentGetWordsPositionsV1Request';
+import { EzsigndocumentGetWordsPositionsV1Response } from './ezsigndocumentGetWordsPositionsV1Response';
+import { EzsigndocumentGetWordsPositionsV1ResponseAllOf } from './ezsigndocumentGetWordsPositionsV1ResponseAllOf';
+import { EzsigndocumentGetWordsPositionsV1ResponseMPayload } from './ezsigndocumentGetWordsPositionsV1ResponseMPayload';
 import { EzsigndocumentRequest } from './ezsigndocumentRequest';
 import { EzsigndocumentRequestCompound } from './ezsigndocumentRequestCompound';
 import { EzsigndocumentResponse } from './ezsigndocumentResponse';
@@ -179,32 +214,40 @@ import { EzsignfolderCreateObjectV1Response } from './ezsignfolderCreateObjectV1
 import { EzsignfolderCreateObjectV1ResponseMPayload } from './ezsignfolderCreateObjectV1ResponseMPayload';
 import { EzsignfolderDeleteObjectV1Response } from './ezsignfolderDeleteObjectV1Response';
 import { EzsignfolderGetObjectV1Response } from './ezsignfolderGetObjectV1Response';
+import { EzsignfolderGetObjectV1ResponseAllOf } from './ezsignfolderGetObjectV1ResponseAllOf';
 import { EzsignfolderGetObjectV1ResponseMPayload } from './ezsignfolderGetObjectV1ResponseMPayload';
 import { EzsignfolderRequest } from './ezsignfolderRequest';
 import { EzsignfolderRequestCompound } from './ezsignfolderRequestCompound';
+import { EzsignfolderRequestCompoundAllOf } from './ezsignfolderRequestCompoundAllOf';
 import { EzsignfolderResponse } from './ezsignfolderResponse';
-import { EzsignfolderResponseAllOf } from './ezsignfolderResponseAllOf';
 import { EzsignfolderResponseCompound } from './ezsignfolderResponseCompound';
 import { EzsignfolderSendV1Request } from './ezsignfolderSendV1Request';
 import { EzsignfolderSendV1Response } from './ezsignfolderSendV1Response';
 import { EzsignfoldersignerassociationCreateObjectV1Request } from './ezsignfoldersignerassociationCreateObjectV1Request';
 import { EzsignfoldersignerassociationCreateObjectV1Response } from './ezsignfoldersignerassociationCreateObjectV1Response';
+import { EzsignfoldersignerassociationCreateObjectV1ResponseAllOf } from './ezsignfoldersignerassociationCreateObjectV1ResponseAllOf';
 import { EzsignfoldersignerassociationCreateObjectV1ResponseMPayload } from './ezsignfoldersignerassociationCreateObjectV1ResponseMPayload';
 import { EzsignfoldersignerassociationDeleteObjectV1Response } from './ezsignfoldersignerassociationDeleteObjectV1Response';
 import { EzsignfoldersignerassociationGetInPersonLoginUrlV1Response } from './ezsignfoldersignerassociationGetInPersonLoginUrlV1Response';
+import { EzsignfoldersignerassociationGetInPersonLoginUrlV1ResponseAllOf } from './ezsignfoldersignerassociationGetInPersonLoginUrlV1ResponseAllOf';
 import { EzsignfoldersignerassociationGetInPersonLoginUrlV1ResponseMPayload } from './ezsignfoldersignerassociationGetInPersonLoginUrlV1ResponseMPayload';
 import { EzsignfoldersignerassociationGetObjectV1Response } from './ezsignfoldersignerassociationGetObjectV1Response';
+import { EzsignfoldersignerassociationGetObjectV1ResponseAllOf } from './ezsignfoldersignerassociationGetObjectV1ResponseAllOf';
 import { EzsignfoldersignerassociationRequest } from './ezsignfoldersignerassociationRequest';
 import { EzsignfoldersignerassociationRequestCompound } from './ezsignfoldersignerassociationRequestCompound';
+import { EzsignfoldersignerassociationRequestCompoundAllOf } from './ezsignfoldersignerassociationRequestCompoundAllOf';
 import { EzsignsignatureCreateObjectV1Request } from './ezsignsignatureCreateObjectV1Request';
 import { EzsignsignatureCreateObjectV1Response } from './ezsignsignatureCreateObjectV1Response';
+import { EzsignsignatureCreateObjectV1ResponseAllOf } from './ezsignsignatureCreateObjectV1ResponseAllOf';
 import { EzsignsignatureCreateObjectV1ResponseMPayload } from './ezsignsignatureCreateObjectV1ResponseMPayload';
 import { EzsignsignatureDeleteObjectV1Response } from './ezsignsignatureDeleteObjectV1Response';
 import { EzsignsignatureGetObjectV1Response } from './ezsignsignatureGetObjectV1Response';
+import { EzsignsignatureGetObjectV1ResponseAllOf } from './ezsignsignatureGetObjectV1ResponseAllOf';
 import { EzsignsignatureRequest } from './ezsignsignatureRequest';
 import { EzsignsignatureRequestCompound } from './ezsignsignatureRequestCompound';
 import { EzsignsignerRequest } from './ezsignsignerRequest';
 import { EzsignsignerRequestCompound } from './ezsignsignerRequestCompound';
+import { EzsignsignerRequestCompoundAllOf } from './ezsignsignerRequestCompoundAllOf';
 import { EzsignsignerRequestCompoundContact } from './ezsignsignerRequestCompoundContact';
 import { FieldEEzsigndocumentStep } from './fieldEEzsigndocumentStep';
 import { FieldEEzsignfolderSendreminderfrequency } from './fieldEEzsignfolderSendreminderfrequency';
@@ -215,9 +258,11 @@ import { FieldEUserType } from './fieldEUserType';
 import { FieldEUserTypeSSPR } from './fieldEUserTypeSSPR';
 import { FranchisereferalincomeCreateObjectV1Request } from './franchisereferalincomeCreateObjectV1Request';
 import { FranchisereferalincomeCreateObjectV1Response } from './franchisereferalincomeCreateObjectV1Response';
+import { FranchisereferalincomeCreateObjectV1ResponseAllOf } from './franchisereferalincomeCreateObjectV1ResponseAllOf';
 import { FranchisereferalincomeCreateObjectV1ResponseMPayload } from './franchisereferalincomeCreateObjectV1ResponseMPayload';
 import { FranchisereferalincomeRequest } from './franchisereferalincomeRequest';
 import { FranchisereferalincomeRequestCompound } from './franchisereferalincomeRequestCompound';
+import { FranchisereferalincomeRequestCompoundAllOf } from './franchisereferalincomeRequestCompoundAllOf';
 import { GlobalCustomerGetEndpointV1Response } from './globalCustomerGetEndpointV1Response';
 import { MultilingualApikeyDescription } from './multilingualApikeyDescription';
 import { PhoneRequest } from './phoneRequest';
@@ -237,9 +282,9 @@ import { UNUSEDEzsignsignatureEditObjectV1Request } from './uNUSEDEzsignsignatur
 import { UNUSEDEzsignsignatureEditObjectV1Response } from './uNUSEDEzsignsignatureEditObjectV1Response';
 import { UserCreateEzsignuserV1Request } from './userCreateEzsignuserV1Request';
 import { UserCreateEzsignuserV1Response } from './userCreateEzsignuserV1Response';
+import { UserCreateEzsignuserV1ResponseAllOf } from './userCreateEzsignuserV1ResponseAllOf';
 import { UserCreateEzsignuserV1ResponseMPayload } from './userCreateEzsignuserV1ResponseMPayload';
 import { UserResponse } from './userResponse';
-import { UserResponseAllOf } from './userResponseAllOf';
 import { WebhookEzsignDocumentCompleted } from './webhookEzsignDocumentCompleted';
 import { WebhookEzsignDocumentCompletedAllOf } from './webhookEzsignDocumentCompletedAllOf';
 import { WebhookEzsignFolderCompleted } from './webhookEzsignFolderCompleted';
@@ -248,6 +293,7 @@ import { WebhookResponse } from './webhookResponse';
 import { WebhookUserUserCreated } from './webhookUserUserCreated';
 import { WebhookUserUserCreatedAllOf } from './webhookUserUserCreatedAllOf';
 import { WebsiteRequest } from './websiteRequest';
+import { WordPositionResponse } from './wordPositionResponse';
 
 /* tslint:disable:no-unused-variable */
 let primitives = [
@@ -283,10 +329,12 @@ let enumsMap: {[index: string]: any} = {
 
 let typeMap: {[index: string]: any} = {
     "ActivesessionGetCurrentV1Response": ActivesessionGetCurrentV1Response,
+    "ActivesessionGetCurrentV1ResponseAllOf": ActivesessionGetCurrentV1ResponseAllOf,
     "ActivesessionGetCurrentV1ResponseMPayload": ActivesessionGetCurrentV1ResponseMPayload,
     "AddressRequest": AddressRequest,
     "ApikeyCreateObjectV1Request": ApikeyCreateObjectV1Request,
     "ApikeyCreateObjectV1Response": ApikeyCreateObjectV1Response,
+    "ApikeyCreateObjectV1ResponseAllOf": ApikeyCreateObjectV1ResponseAllOf,
     "ApikeyCreateObjectV1ResponseMPayload": ApikeyCreateObjectV1ResponseMPayload,
     "ApikeyRequest": ApikeyRequest,
     "ApikeyRequestCompound": ApikeyRequestCompound,
@@ -294,9 +342,11 @@ let typeMap: {[index: string]: any} = {
     "AttemptResponse": AttemptResponse,
     "AuthenticateAuthenticateV2Request": AuthenticateAuthenticateV2Request,
     "AuthenticateAuthenticateV2Response": AuthenticateAuthenticateV2Response,
+    "AuthenticateAuthenticateV2ResponseAllOf": AuthenticateAuthenticateV2ResponseAllOf,
     "AuthenticateAuthenticateV2ResponseMPayload": AuthenticateAuthenticateV2ResponseMPayload,
     "CommonAudit": CommonAudit,
     "CommonGetAutocompleteV1Response": CommonGetAutocompleteV1Response,
+    "CommonGetAutocompleteV1ResponseAllOf": CommonGetAutocompleteV1ResponseAllOf,
     "CommonGetAutocompleteV1ResponseMPayload": CommonGetAutocompleteV1ResponseMPayload,
     "CommonResponse": CommonResponse,
     "CommonResponseError": CommonResponseError,
@@ -309,17 +359,25 @@ let typeMap: {[index: string]: any} = {
     "ContactRequestCompoundAllOf": ContactRequestCompoundAllOf,
     "ContactinformationsRequest": ContactinformationsRequest,
     "ContactinformationsRequestCompound": ContactinformationsRequestCompound,
+    "ContactinformationsRequestCompoundAllOf": ContactinformationsRequestCompoundAllOf,
     "EmailRequest": EmailRequest,
     "EzsigndocumentApplyEzsigntemplateV1Request": EzsigndocumentApplyEzsigntemplateV1Request,
     "EzsigndocumentApplyEzsigntemplateV1Response": EzsigndocumentApplyEzsigntemplateV1Response,
     "EzsigndocumentCreateObjectV1Request": EzsigndocumentCreateObjectV1Request,
     "EzsigndocumentCreateObjectV1Response": EzsigndocumentCreateObjectV1Response,
+    "EzsigndocumentCreateObjectV1ResponseAllOf": EzsigndocumentCreateObjectV1ResponseAllOf,
     "EzsigndocumentCreateObjectV1ResponseMPayload": EzsigndocumentCreateObjectV1ResponseMPayload,
     "EzsigndocumentDeleteObjectV1Response": EzsigndocumentDeleteObjectV1Response,
     "EzsigndocumentGetDownloadUrlV1Response": EzsigndocumentGetDownloadUrlV1Response,
+    "EzsigndocumentGetDownloadUrlV1ResponseAllOf": EzsigndocumentGetDownloadUrlV1ResponseAllOf,
     "EzsigndocumentGetDownloadUrlV1ResponseMPayload": EzsigndocumentGetDownloadUrlV1ResponseMPayload,
     "EzsigndocumentGetObjectV1Response": EzsigndocumentGetObjectV1Response,
+    "EzsigndocumentGetObjectV1ResponseAllOf": EzsigndocumentGetObjectV1ResponseAllOf,
     "EzsigndocumentGetObjectV1ResponseMPayload": EzsigndocumentGetObjectV1ResponseMPayload,
+    "EzsigndocumentGetWordsPositionsV1Request": EzsigndocumentGetWordsPositionsV1Request,
+    "EzsigndocumentGetWordsPositionsV1Response": EzsigndocumentGetWordsPositionsV1Response,
+    "EzsigndocumentGetWordsPositionsV1ResponseAllOf": EzsigndocumentGetWordsPositionsV1ResponseAllOf,
+    "EzsigndocumentGetWordsPositionsV1ResponseMPayload": EzsigndocumentGetWordsPositionsV1ResponseMPayload,
     "EzsigndocumentRequest": EzsigndocumentRequest,
     "EzsigndocumentRequestCompound": EzsigndocumentRequestCompound,
     "EzsigndocumentResponse": EzsigndocumentResponse,
@@ -330,38 +388,48 @@ let typeMap: {[index: string]: any} = {
     "EzsignfolderCreateObjectV1ResponseMPayload": EzsignfolderCreateObjectV1ResponseMPayload,
     "EzsignfolderDeleteObjectV1Response": EzsignfolderDeleteObjectV1Response,
     "EzsignfolderGetObjectV1Response": EzsignfolderGetObjectV1Response,
+    "EzsignfolderGetObjectV1ResponseAllOf": EzsignfolderGetObjectV1ResponseAllOf,
     "EzsignfolderGetObjectV1ResponseMPayload": EzsignfolderGetObjectV1ResponseMPayload,
     "EzsignfolderRequest": EzsignfolderRequest,
     "EzsignfolderRequestCompound": EzsignfolderRequestCompound,
+    "EzsignfolderRequestCompoundAllOf": EzsignfolderRequestCompoundAllOf,
     "EzsignfolderResponse": EzsignfolderResponse,
-    "EzsignfolderResponseAllOf": EzsignfolderResponseAllOf,
     "EzsignfolderResponseCompound": EzsignfolderResponseCompound,
     "EzsignfolderSendV1Request": EzsignfolderSendV1Request,
     "EzsignfolderSendV1Response": EzsignfolderSendV1Response,
     "EzsignfoldersignerassociationCreateObjectV1Request": EzsignfoldersignerassociationCreateObjectV1Request,
     "EzsignfoldersignerassociationCreateObjectV1Response": EzsignfoldersignerassociationCreateObjectV1Response,
+    "EzsignfoldersignerassociationCreateObjectV1ResponseAllOf": EzsignfoldersignerassociationCreateObjectV1ResponseAllOf,
     "EzsignfoldersignerassociationCreateObjectV1ResponseMPayload": EzsignfoldersignerassociationCreateObjectV1ResponseMPayload,
     "EzsignfoldersignerassociationDeleteObjectV1Response": EzsignfoldersignerassociationDeleteObjectV1Response,
     "EzsignfoldersignerassociationGetInPersonLoginUrlV1Response": EzsignfoldersignerassociationGetInPersonLoginUrlV1Response,
+    "EzsignfoldersignerassociationGetInPersonLoginUrlV1ResponseAllOf": EzsignfoldersignerassociationGetInPersonLoginUrlV1ResponseAllOf,
     "EzsignfoldersignerassociationGetInPersonLoginUrlV1ResponseMPayload": EzsignfoldersignerassociationGetInPersonLoginUrlV1ResponseMPayload,
     "EzsignfoldersignerassociationGetObjectV1Response": EzsignfoldersignerassociationGetObjectV1Response,
+    "EzsignfoldersignerassociationGetObjectV1ResponseAllOf": EzsignfoldersignerassociationGetObjectV1ResponseAllOf,
     "EzsignfoldersignerassociationRequest": EzsignfoldersignerassociationRequest,
     "EzsignfoldersignerassociationRequestCompound": EzsignfoldersignerassociationRequestCompound,
+    "EzsignfoldersignerassociationRequestCompoundAllOf": EzsignfoldersignerassociationRequestCompoundAllOf,
     "EzsignsignatureCreateObjectV1Request": EzsignsignatureCreateObjectV1Request,
     "EzsignsignatureCreateObjectV1Response": EzsignsignatureCreateObjectV1Response,
+    "EzsignsignatureCreateObjectV1ResponseAllOf": EzsignsignatureCreateObjectV1ResponseAllOf,
     "EzsignsignatureCreateObjectV1ResponseMPayload": EzsignsignatureCreateObjectV1ResponseMPayload,
     "EzsignsignatureDeleteObjectV1Response": EzsignsignatureDeleteObjectV1Response,
     "EzsignsignatureGetObjectV1Response": EzsignsignatureGetObjectV1Response,
+    "EzsignsignatureGetObjectV1ResponseAllOf": EzsignsignatureGetObjectV1ResponseAllOf,
     "EzsignsignatureRequest": EzsignsignatureRequest,
     "EzsignsignatureRequestCompound": EzsignsignatureRequestCompound,
     "EzsignsignerRequest": EzsignsignerRequest,
     "EzsignsignerRequestCompound": EzsignsignerRequestCompound,
+    "EzsignsignerRequestCompoundAllOf": EzsignsignerRequestCompoundAllOf,
     "EzsignsignerRequestCompoundContact": EzsignsignerRequestCompoundContact,
     "FranchisereferalincomeCreateObjectV1Request": FranchisereferalincomeCreateObjectV1Request,
     "FranchisereferalincomeCreateObjectV1Response": FranchisereferalincomeCreateObjectV1Response,
+    "FranchisereferalincomeCreateObjectV1ResponseAllOf": FranchisereferalincomeCreateObjectV1ResponseAllOf,
     "FranchisereferalincomeCreateObjectV1ResponseMPayload": FranchisereferalincomeCreateObjectV1ResponseMPayload,
     "FranchisereferalincomeRequest": FranchisereferalincomeRequest,
     "FranchisereferalincomeRequestCompound": FranchisereferalincomeRequestCompound,
+    "FranchisereferalincomeRequestCompoundAllOf": FranchisereferalincomeRequestCompoundAllOf,
     "GlobalCustomerGetEndpointV1Response": GlobalCustomerGetEndpointV1Response,
     "MultilingualApikeyDescription": MultilingualApikeyDescription,
     "PhoneRequest": PhoneRequest,
@@ -381,9 +449,9 @@ let typeMap: {[index: string]: any} = {
     "UNUSEDEzsignsignatureEditObjectV1Response": UNUSEDEzsignsignatureEditObjectV1Response,
     "UserCreateEzsignuserV1Request": UserCreateEzsignuserV1Request,
     "UserCreateEzsignuserV1Response": UserCreateEzsignuserV1Response,
+    "UserCreateEzsignuserV1ResponseAllOf": UserCreateEzsignuserV1ResponseAllOf,
     "UserCreateEzsignuserV1ResponseMPayload": UserCreateEzsignuserV1ResponseMPayload,
     "UserResponse": UserResponse,
-    "UserResponseAllOf": UserResponseAllOf,
     "WebhookEzsignDocumentCompleted": WebhookEzsignDocumentCompleted,
     "WebhookEzsignDocumentCompletedAllOf": WebhookEzsignDocumentCompletedAllOf,
     "WebhookEzsignFolderCompleted": WebhookEzsignFolderCompleted,
@@ -392,6 +460,7 @@ let typeMap: {[index: string]: any} = {
     "WebhookUserUserCreated": WebhookUserUserCreated,
     "WebhookUserUserCreatedAllOf": WebhookUserUserCreatedAllOf,
     "WebsiteRequest": WebsiteRequest,
+    "WordPositionResponse": WordPositionResponse,
 }
 
 export class ObjectSerializer {
