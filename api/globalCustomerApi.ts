@@ -93,7 +93,7 @@ export class GlobalCustomerApi {
     /**
      * Retrieve the customer\'s specific server endpoint where to send requests. This will help locate the proper region (ie: sInfrastructureregionCode) and the proper environment (ie: sInfrastructureenvironmenttypeDescription) where the customer\'s data is stored.
      * @summary Get customer endpoint
-     * @param pksCustomerCode The customer code assigned to your account
+     * @param pksCustomerCode 
      * @param sInfrastructureproductCode The infrastructure product Code  If undefined, \&quot;appcluster01\&quot; is assumed
      */
     public async globalCustomerGetEndpointV1 (pksCustomerCode: string, sInfrastructureproductCode?: 'appcluster01' | 'ezsignuser', options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: GlobalCustomerGetEndpointV1Response;  }> {

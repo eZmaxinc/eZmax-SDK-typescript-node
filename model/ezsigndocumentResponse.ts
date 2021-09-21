@@ -12,7 +12,6 @@
 
 import { RequestFile } from './models';
 import { CommonAudit } from './commonAudit';
-import { EzsigndocumentResponseAllOf } from './ezsigndocumentResponseAllOf';
 import { FieldEEzsigndocumentStep } from './fieldEEzsigndocumentStep';
 
 /**
@@ -36,7 +35,7 @@ export class EzsigndocumentResponse {
     */
     'sEzsigndocumentName': string;
     /**
-    * The unique ID of the Ezsigntemplate
+    * The unique ID of the Ezsigndocument
     */
     'pkiEzsigndocumentID': number;
     'eEzsigndocumentStep': FieldEEzsigndocumentStep;

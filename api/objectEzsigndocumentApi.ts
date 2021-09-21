@@ -22,6 +22,7 @@ import { EzsigndocumentCreateObjectV1Request } from '../model/ezsigndocumentCrea
 import { EzsigndocumentCreateObjectV1Response } from '../model/ezsigndocumentCreateObjectV1Response';
 import { EzsigndocumentDeleteObjectV1Response } from '../model/ezsigndocumentDeleteObjectV1Response';
 import { EzsigndocumentGetDownloadUrlV1Response } from '../model/ezsigndocumentGetDownloadUrlV1Response';
+import { EzsigndocumentGetEzsignpagesV1Response } from '../model/ezsigndocumentGetEzsignpagesV1Response';
 import { EzsigndocumentGetObjectV1Response } from '../model/ezsigndocumentGetObjectV1Response';
 import { EzsigndocumentGetWordsPositionsV1Request } from '../model/ezsigndocumentGetWordsPositionsV1Request';
 import { EzsigndocumentGetWordsPositionsV1Response } from '../model/ezsigndocumentGetWordsPositionsV1Response';
@@ -101,7 +102,7 @@ export class ObjectEzsigndocumentApi {
     /**
      * This endpoint applies a predefined template to the ezsign document. This allows to automatically apply all the form and signature fields on a document in a single step.  The document must not already have fields otherwise an error will be returned.
      * @summary Apply an Ezsign Template to the Ezsigndocument.
-     * @param pkiEzsigndocumentID The unique ID of the Ezsigndocument
+     * @param pkiEzsigndocumentID 
      * @param ezsigndocumentApplyEzsigntemplateV1Request 
      */
     public async ezsigndocumentApplyEzsigntemplateV1 (pkiEzsigndocumentID: number, ezsigndocumentApplyEzsigntemplateV1Request: EzsigndocumentApplyEzsigntemplateV1Request, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsigndocumentApplyEzsigntemplateV1Response;  }> {
@@ -252,7 +253,7 @@ export class ObjectEzsigndocumentApi {
     /**
      * 
      * @summary Delete an existing Ezsigndocument
-     * @param pkiEzsigndocumentID The unique ID of the Ezsigndocument
+     * @param pkiEzsigndocumentID 
      */
     public async ezsigndocumentDeleteObjectV1 (pkiEzsigndocumentID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsigndocumentDeleteObjectV1Response;  }> {
         const localVarPath = this.basePath + '/1/object/ezsigndocument/{pkiEzsigndocumentID}'
@@ -324,7 +325,7 @@ export class ObjectEzsigndocumentApi {
     /**
      * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
      * @summary Retrieve an existing Ezsigndocument\'s children IDs
-     * @param pkiEzsigndocumentID The unique ID of the Ezsigndocument
+     * @param pkiEzsigndocumentID 
      */
     public async ezsigndocumentGetChildrenV1 (pkiEzsigndocumentID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body?: any;  }> {
         const localVarPath = this.basePath + '/1/object/ezsigndocument/{pkiEzsigndocumentID}/getChildren'
@@ -395,7 +396,7 @@ export class ObjectEzsigndocumentApi {
     /**
      * This endpoint returns URLs to different files that can be downloaded during the signing process.  These links will expire after 5 minutes so the download of the file should be made soon after retrieving the link.
      * @summary Retrieve a URL to download documents.
-     * @param pkiEzsigndocumentID The unique ID of the Ezsigndocument
+     * @param pkiEzsigndocumentID 
      * @param eDocumentType The type of document to retrieve.  1. **Initial** Is the initial document before any signature were applied. 2. **Signed** Is the final document once all signatures were applied. 3. **Proofdocument** Is the evidence report. 4. **Proof** Is the complete evidence archive including all of the above and more. 
      */
     public async ezsigndocumentGetDownloadUrlV1 (pkiEzsigndocumentID: number, eDocumentType: 'Initial' | 'Signed' | 'Proof' | 'Proofdocument', options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsigndocumentGetDownloadUrlV1Response;  }> {
@@ -473,8 +474,80 @@ export class ObjectEzsigndocumentApi {
     }
     /**
      * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
+     * @summary Retrieve an existing Ezsigndocument\'s Ezsignpages
+     * @param pkiEzsigndocumentID 
+     */
+    public async ezsigndocumentGetEzsignpagesV1 (pkiEzsigndocumentID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsigndocumentGetEzsignpagesV1Response;  }> {
+        const localVarPath = this.basePath + '/1/object/ezsigndocument/{pkiEzsigndocumentID}/getEzsignpages'
+            .replace('{' + 'pkiEzsigndocumentID' + '}', encodeURIComponent(String(pkiEzsigndocumentID)));
+        let localVarQueryParameters: any = {};
+        let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
+        const produces = ['application/json'];
+        // give precedence to 'application/json'
+        if (produces.indexOf('application/json') >= 0) {
+            localVarHeaderParams.Accept = 'application/json';
+        } else {
+            localVarHeaderParams.Accept = produces.join(',');
+        }
+        let localVarFormParams: any = {};
+
+        // verify required parameter 'pkiEzsigndocumentID' is not null or undefined
+        if (pkiEzsigndocumentID === null || pkiEzsigndocumentID === undefined) {
+            throw new Error('Required parameter pkiEzsigndocumentID was null or undefined when calling ezsigndocumentGetEzsignpagesV1.');
+        }
+
+        (<any>Object).assign(localVarHeaderParams, options.headers);
+
+        let localVarUseFormData = false;
+
+        let localVarRequestOptions: localVarRequest.Options = {
+            method: 'GET',
+            qs: localVarQueryParameters,
+            headers: localVarHeaderParams,
+            uri: localVarPath,
+            useQuerystring: this._useQuerystring,
+            json: true,
+        };
+
+        let authenticationPromise = Promise.resolve();
+        if (this.authentications.Authorization.apiKey) {
+            authenticationPromise = authenticationPromise.then(() => this.authentications.Authorization.applyToRequest(localVarRequestOptions));
+        }
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+
+        let interceptorPromise = authenticationPromise;
+        for (const interceptor of this.interceptors) {
+            interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+        }
+
+        return interceptorPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
+                } else {
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: EzsigndocumentGetEzsignpagesV1Response;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "EzsigndocumentGetEzsignpagesV1Response");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject(new HttpError(response, body, response.statusCode));
+                        }
+                    }
+                });
+            });
+        });
+    }
+    /**
+     * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
      * @summary Retrieve an existing Ezsigndocument\'s Form Data
-     * @param pkiEzsigndocumentID The unique ID of the Ezsigndocument
+     * @param pkiEzsigndocumentID 
      */
     public async ezsigndocumentGetFormDataV1 (pkiEzsigndocumentID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Buffer;  }> {
         const localVarPath = this.basePath + '/1/object/ezsigndocument/{pkiEzsigndocumentID}/getFormData'
@@ -546,7 +619,7 @@ export class ObjectEzsigndocumentApi {
     /**
      * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
      * @summary Retrieve an existing Ezsigndocument
-     * @param pkiEzsigndocumentID The unique ID of the Ezsigndocument
+     * @param pkiEzsigndocumentID 
      */
     public async ezsigndocumentGetObjectV1 (pkiEzsigndocumentID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsigndocumentGetObjectV1Response;  }> {
         const localVarPath = this.basePath + '/1/object/ezsigndocument/{pkiEzsigndocumentID}'
@@ -618,7 +691,7 @@ export class ObjectEzsigndocumentApi {
     /**
      * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
      * @summary Retrieve positions X,Y of given words from a Ezsigndocument
-     * @param pkiEzsigndocumentID The unique ID of the Ezsigndocument
+     * @param pkiEzsigndocumentID 
      * @param ezsigndocumentGetWordsPositionsV1Request 
      */
     public async ezsigndocumentGetWordsPositionsV1 (pkiEzsigndocumentID: number, ezsigndocumentGetWordsPositionsV1Request: EzsigndocumentGetWordsPositionsV1Request, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsigndocumentGetWordsPositionsV1Response;  }> {

@@ -43,6 +43,9 @@ export * from './ezsigndocumentDeleteObjectV1Response';
 export * from './ezsigndocumentGetDownloadUrlV1Response';
 export * from './ezsigndocumentGetDownloadUrlV1ResponseAllOf';
 export * from './ezsigndocumentGetDownloadUrlV1ResponseMPayload';
+export * from './ezsigndocumentGetEzsignpagesV1Response';
+export * from './ezsigndocumentGetEzsignpagesV1ResponseAllOf';
+export * from './ezsigndocumentGetEzsignpagesV1ResponseMPayload';
 export * from './ezsigndocumentGetObjectV1Response';
 export * from './ezsigndocumentGetObjectV1ResponseAllOf';
 export * from './ezsigndocumentGetObjectV1ResponseMPayload';
@@ -53,7 +56,6 @@ export * from './ezsigndocumentGetWordsPositionsV1ResponseMPayload';
 export * from './ezsigndocumentRequest';
 export * from './ezsigndocumentRequestCompound';
 export * from './ezsigndocumentResponse';
-export * from './ezsigndocumentResponseAllOf';
 export * from './ezsigndocumentResponseCompound';
 export * from './ezsignfolderCreateObjectV1Request';
 export * from './ezsignfolderCreateObjectV1Response';
@@ -82,6 +84,7 @@ export * from './ezsignfoldersignerassociationGetObjectV1ResponseAllOf';
 export * from './ezsignfoldersignerassociationRequest';
 export * from './ezsignfoldersignerassociationRequestCompound';
 export * from './ezsignfoldersignerassociationRequestCompoundAllOf';
+export * from './ezsignpageResponse';
 export * from './ezsignsignatureCreateObjectV1Request';
 export * from './ezsignsignatureCreateObjectV1Response';
 export * from './ezsignsignatureCreateObjectV1ResponseAllOf';
@@ -197,6 +200,9 @@ import { EzsigndocumentDeleteObjectV1Response } from './ezsigndocumentDeleteObje
 import { EzsigndocumentGetDownloadUrlV1Response } from './ezsigndocumentGetDownloadUrlV1Response';
 import { EzsigndocumentGetDownloadUrlV1ResponseAllOf } from './ezsigndocumentGetDownloadUrlV1ResponseAllOf';
 import { EzsigndocumentGetDownloadUrlV1ResponseMPayload } from './ezsigndocumentGetDownloadUrlV1ResponseMPayload';
+import { EzsigndocumentGetEzsignpagesV1Response } from './ezsigndocumentGetEzsignpagesV1Response';
+import { EzsigndocumentGetEzsignpagesV1ResponseAllOf } from './ezsigndocumentGetEzsignpagesV1ResponseAllOf';
+import { EzsigndocumentGetEzsignpagesV1ResponseMPayload } from './ezsigndocumentGetEzsignpagesV1ResponseMPayload';
 import { EzsigndocumentGetObjectV1Response } from './ezsigndocumentGetObjectV1Response';
 import { EzsigndocumentGetObjectV1ResponseAllOf } from './ezsigndocumentGetObjectV1ResponseAllOf';
 import { EzsigndocumentGetObjectV1ResponseMPayload } from './ezsigndocumentGetObjectV1ResponseMPayload';
@@ -207,7 +213,6 @@ import { EzsigndocumentGetWordsPositionsV1ResponseMPayload } from './ezsigndocum
 import { EzsigndocumentRequest } from './ezsigndocumentRequest';
 import { EzsigndocumentRequestCompound } from './ezsigndocumentRequestCompound';
 import { EzsigndocumentResponse } from './ezsigndocumentResponse';
-import { EzsigndocumentResponseAllOf } from './ezsigndocumentResponseAllOf';
 import { EzsigndocumentResponseCompound } from './ezsigndocumentResponseCompound';
 import { EzsignfolderCreateObjectV1Request } from './ezsignfolderCreateObjectV1Request';
 import { EzsignfolderCreateObjectV1Response } from './ezsignfolderCreateObjectV1Response';
@@ -236,6 +241,7 @@ import { EzsignfoldersignerassociationGetObjectV1ResponseAllOf } from './ezsignf
 import { EzsignfoldersignerassociationRequest } from './ezsignfoldersignerassociationRequest';
 import { EzsignfoldersignerassociationRequestCompound } from './ezsignfoldersignerassociationRequestCompound';
 import { EzsignfoldersignerassociationRequestCompoundAllOf } from './ezsignfoldersignerassociationRequestCompoundAllOf';
+import { EzsignpageResponse } from './ezsignpageResponse';
 import { EzsignsignatureCreateObjectV1Request } from './ezsignsignatureCreateObjectV1Request';
 import { EzsignsignatureCreateObjectV1Response } from './ezsignsignatureCreateObjectV1Response';
 import { EzsignsignatureCreateObjectV1ResponseAllOf } from './ezsignsignatureCreateObjectV1ResponseAllOf';
@@ -371,6 +377,9 @@ let typeMap: {[index: string]: any} = {
     "EzsigndocumentGetDownloadUrlV1Response": EzsigndocumentGetDownloadUrlV1Response,
     "EzsigndocumentGetDownloadUrlV1ResponseAllOf": EzsigndocumentGetDownloadUrlV1ResponseAllOf,
     "EzsigndocumentGetDownloadUrlV1ResponseMPayload": EzsigndocumentGetDownloadUrlV1ResponseMPayload,
+    "EzsigndocumentGetEzsignpagesV1Response": EzsigndocumentGetEzsignpagesV1Response,
+    "EzsigndocumentGetEzsignpagesV1ResponseAllOf": EzsigndocumentGetEzsignpagesV1ResponseAllOf,
+    "EzsigndocumentGetEzsignpagesV1ResponseMPayload": EzsigndocumentGetEzsignpagesV1ResponseMPayload,
     "EzsigndocumentGetObjectV1Response": EzsigndocumentGetObjectV1Response,
     "EzsigndocumentGetObjectV1ResponseAllOf": EzsigndocumentGetObjectV1ResponseAllOf,
     "EzsigndocumentGetObjectV1ResponseMPayload": EzsigndocumentGetObjectV1ResponseMPayload,
@@ -381,7 +390,6 @@ let typeMap: {[index: string]: any} = {
     "EzsigndocumentRequest": EzsigndocumentRequest,
     "EzsigndocumentRequestCompound": EzsigndocumentRequestCompound,
     "EzsigndocumentResponse": EzsigndocumentResponse,
-    "EzsigndocumentResponseAllOf": EzsigndocumentResponseAllOf,
     "EzsigndocumentResponseCompound": EzsigndocumentResponseCompound,
     "EzsignfolderCreateObjectV1Request": EzsignfolderCreateObjectV1Request,
     "EzsignfolderCreateObjectV1Response": EzsignfolderCreateObjectV1Response,
@@ -410,6 +418,7 @@ let typeMap: {[index: string]: any} = {
     "EzsignfoldersignerassociationRequest": EzsignfoldersignerassociationRequest,
     "EzsignfoldersignerassociationRequestCompound": EzsignfoldersignerassociationRequestCompound,
     "EzsignfoldersignerassociationRequestCompoundAllOf": EzsignfoldersignerassociationRequestCompoundAllOf,
+    "EzsignpageResponse": EzsignpageResponse,
     "EzsignsignatureCreateObjectV1Request": EzsignsignatureCreateObjectV1Request,
     "EzsignsignatureCreateObjectV1Response": EzsignsignatureCreateObjectV1Response,
     "EzsignsignatureCreateObjectV1ResponseAllOf": EzsignsignatureCreateObjectV1ResponseAllOf,

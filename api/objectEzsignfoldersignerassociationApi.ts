@@ -169,7 +169,7 @@ export class ObjectEzsignfoldersignerassociationApi {
     /**
      * 
      * @summary Delete an existing Ezsignfoldersignerassociation
-     * @param pkiEzsignfoldersignerassociationID The unique ID of the Ezsignfoldersignerassociation
+     * @param pkiEzsignfoldersignerassociationID 
      */
     public async ezsignfoldersignerassociationDeleteObjectV1 (pkiEzsignfoldersignerassociationID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsignfoldersignerassociationDeleteObjectV1Response;  }> {
         const localVarPath = this.basePath + '/1/object/ezsignfoldersignerassociation/{pkiEzsignfoldersignerassociationID}'
@@ -241,7 +241,7 @@ export class ObjectEzsignfoldersignerassociationApi {
     /**
      * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
      * @summary Retrieve an existing Ezsignfoldersignerassociation\'s children IDs
-     * @param pkiEzsignfoldersignerassociationID The unique ID of the Ezsignfoldersignerassociation
+     * @param pkiEzsignfoldersignerassociationID 
      */
     public async ezsignfoldersignerassociationGetChildrenV1 (pkiEzsignfoldersignerassociationID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body?: any;  }> {
         const localVarPath = this.basePath + '/1/object/ezsignfoldersignerassociation/{pkiEzsignfoldersignerassociationID}/getChildren'
@@ -312,7 +312,7 @@ export class ObjectEzsignfoldersignerassociationApi {
     /**
      * This endpoint returns a Login Url that can be used in a browser or embedded in an I-Frame to allow in person signing.  The signer Login type must be configured as In-Person.
      * @summary Retrieve a Login Url to allow In-Person signing
-     * @param pkiEzsignfoldersignerassociationID The unique ID of the Ezsignfoldersignerassociation
+     * @param pkiEzsignfoldersignerassociationID 
      */
     public async ezsignfoldersignerassociationGetInPersonLoginUrlV1 (pkiEzsignfoldersignerassociationID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsignfoldersignerassociationGetInPersonLoginUrlV1Response;  }> {
         const localVarPath = this.basePath + '/1/object/ezsignfoldersignerassociation/{pkiEzsignfoldersignerassociationID}/getInPersonLoginUrl'
@@ -384,7 +384,7 @@ export class ObjectEzsignfoldersignerassociationApi {
     /**
      * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
      * @summary Retrieve an existing Ezsignfoldersignerassociation
-     * @param pkiEzsignfoldersignerassociationID The unique ID of the Ezsignfoldersignerassociation
+     * @param pkiEzsignfoldersignerassociationID 
      */
     public async ezsignfoldersignerassociationGetObjectV1 (pkiEzsignfoldersignerassociationID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsignfoldersignerassociationGetObjectV1Response;  }> {
         const localVarPath = this.basePath + '/1/object/ezsignfoldersignerassociation/{pkiEzsignfoldersignerassociationID}'

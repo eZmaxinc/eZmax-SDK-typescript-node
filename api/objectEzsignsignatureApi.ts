@@ -168,7 +168,7 @@ export class ObjectEzsignsignatureApi {
     /**
      * 
      * @summary Delete an existing Ezsignsignature
-     * @param pkiEzsignsignatureID The unique ID of the Ezsignsignature
+     * @param pkiEzsignsignatureID 
      */
     public async ezsignsignatureDeleteObjectV1 (pkiEzsignsignatureID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsignsignatureDeleteObjectV1Response;  }> {
         const localVarPath = this.basePath + '/1/object/ezsignsignature/{pkiEzsignsignatureID}'
@@ -240,7 +240,7 @@ export class ObjectEzsignsignatureApi {
     /**
      * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
      * @summary Retrieve an existing Ezsignsignature\'s children IDs
-     * @param pkiEzsignsignatureID The unique ID of the Ezsignsignature
+     * @param pkiEzsignsignatureID 
      */
     public async ezsignsignatureGetChildrenV1 (pkiEzsignsignatureID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body?: any;  }> {
         const localVarPath = this.basePath + '/1/object/ezsignsignature/{pkiEzsignsignatureID}/getChildren'
@@ -311,7 +311,7 @@ export class ObjectEzsignsignatureApi {
     /**
      * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
      * @summary Retrieve an existing Ezsignsignature
-     * @param pkiEzsignsignatureID The unique ID of the Ezsignsignature
+     * @param pkiEzsignsignatureID 
      */
     public async ezsignsignatureGetObjectV1 (pkiEzsignsignatureID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsignsignatureGetObjectV1Response;  }> {
         const localVarPath = this.basePath + '/1/object/ezsignsignature/{pkiEzsignsignatureID}'

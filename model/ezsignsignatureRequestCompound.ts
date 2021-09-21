@@ -23,7 +23,7 @@ export class EzsignsignatureRequestCompound {
     */
     'fkiEzsignfoldersignerassociationID': number;
     /**
-    * The page number in the document where to apply the signature
+    * The page number in the Ezsigndocument
     */
     'iEzsignpagePagenumber': number;
     /**
@@ -40,7 +40,7 @@ export class EzsignsignatureRequestCompound {
     'iEzsignsignatureStep': number;
     'eEzsignsignatureType': FieldEEzsignsignatureType;
     /**
-    * The unique ID of the Ezsigntemplate
+    * The unique ID of the Ezsigndocument
     */
     'fkiEzsigndocumentID': number;
 

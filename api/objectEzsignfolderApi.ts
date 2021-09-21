@@ -170,7 +170,7 @@ export class ObjectEzsignfolderApi {
     /**
      * 
      * @summary Delete an existing Ezsignfolder
-     * @param pkiEzsignfolderID The unique ID of the Ezsignfolder
+     * @param pkiEzsignfolderID 
      */
     public async ezsignfolderDeleteObjectV1 (pkiEzsignfolderID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsignfolderDeleteObjectV1Response;  }> {
         const localVarPath = this.basePath + '/1/object/ezsignfolder/{pkiEzsignfolderID}'
@@ -242,7 +242,7 @@ export class ObjectEzsignfolderApi {
     /**
      * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
      * @summary Retrieve an existing Ezsignfolder\'s children IDs
-     * @param pkiEzsignfolderID The unique ID of the Ezsignfolder
+     * @param pkiEzsignfolderID 
      */
     public async ezsignfolderGetChildrenV1 (pkiEzsignfolderID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body?: any;  }> {
         const localVarPath = this.basePath + '/1/object/ezsignfolder/{pkiEzsignfolderID}/getChildren'
@@ -312,8 +312,80 @@ export class ObjectEzsignfolderApi {
     }
     /**
      * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
+     * @summary Retrieve an existing Ezsignfolder\'s forms data
+     * @param pkiEzsignfolderID 
+     */
+    public async ezsignfolderGetFormsDataV1 (pkiEzsignfolderID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: Buffer;  }> {
+        const localVarPath = this.basePath + '/1/object/ezsignfolder/{pkiEzsignfolderID}/getFormsData'
+            .replace('{' + 'pkiEzsignfolderID' + '}', encodeURIComponent(String(pkiEzsignfolderID)));
+        let localVarQueryParameters: any = {};
+        let localVarHeaderParams: any = (<any>Object).assign({}, this._defaultHeaders);
+        const produces = ['application/zip', 'application/json'];
+        // give precedence to 'application/json'
+        if (produces.indexOf('application/json') >= 0) {
+            localVarHeaderParams.Accept = 'application/json';
+        } else {
+            localVarHeaderParams.Accept = produces.join(',');
+        }
+        let localVarFormParams: any = {};
+
+        // verify required parameter 'pkiEzsignfolderID' is not null or undefined
+        if (pkiEzsignfolderID === null || pkiEzsignfolderID === undefined) {
+            throw new Error('Required parameter pkiEzsignfolderID was null or undefined when calling ezsignfolderGetFormsDataV1.');
+        }
+
+        (<any>Object).assign(localVarHeaderParams, options.headers);
+
+        let localVarUseFormData = false;
+
+        let localVarRequestOptions: localVarRequest.Options = {
+            method: 'GET',
+            qs: localVarQueryParameters,
+            headers: localVarHeaderParams,
+            uri: localVarPath,
+            useQuerystring: this._useQuerystring,
+            encoding: null,
+        };
+
+        let authenticationPromise = Promise.resolve();
+        if (this.authentications.Authorization.apiKey) {
+            authenticationPromise = authenticationPromise.then(() => this.authentications.Authorization.applyToRequest(localVarRequestOptions));
+        }
+        authenticationPromise = authenticationPromise.then(() => this.authentications.default.applyToRequest(localVarRequestOptions));
+
+        let interceptorPromise = authenticationPromise;
+        for (const interceptor of this.interceptors) {
+            interceptorPromise = interceptorPromise.then(() => interceptor(localVarRequestOptions));
+        }
+
+        return interceptorPromise.then(() => {
+            if (Object.keys(localVarFormParams).length) {
+                if (localVarUseFormData) {
+                    (<any>localVarRequestOptions).formData = localVarFormParams;
+                } else {
+                    localVarRequestOptions.form = localVarFormParams;
+                }
+            }
+            return new Promise<{ response: http.IncomingMessage; body: Buffer;  }>((resolve, reject) => {
+                localVarRequest(localVarRequestOptions, (error, response, body) => {
+                    if (error) {
+                        reject(error);
+                    } else {
+                        body = ObjectSerializer.deserialize(body, "Buffer");
+                        if (response.statusCode && response.statusCode >= 200 && response.statusCode <= 299) {
+                            resolve({ response: response, body: body });
+                        } else {
+                            reject(new HttpError(response, body, response.statusCode));
+                        }
+                    }
+                });
+            });
+        });
+    }
+    /**
+     * ## ⚠️EARLY ADOPTERS WARNING  ### This endpoint is not officially released. Its definition might still change and it might not be available in every environment and region.
      * @summary Retrieve an existing Ezsignfolder
-     * @param pkiEzsignfolderID The unique ID of the Ezsignfolder
+     * @param pkiEzsignfolderID 
      */
     public async ezsignfolderGetObjectV1 (pkiEzsignfolderID: number, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsignfolderGetObjectV1Response;  }> {
         const localVarPath = this.basePath + '/1/object/ezsignfolder/{pkiEzsignfolderID}'
@@ -385,7 +457,7 @@ export class ObjectEzsignfolderApi {
     /**
      * 
      * @summary Send the Ezsignfolder to the signatories for signature
-     * @param pkiEzsignfolderID The unique ID of the Ezsignfolder
+     * @param pkiEzsignfolderID 
      * @param ezsignfolderSendV1Request 
      */
     public async ezsignfolderSendV1 (pkiEzsignfolderID: number, ezsignfolderSendV1Request: EzsignfolderSendV1Request, options: {headers: {[name: string]: string}} = {headers: {}}) : Promise<{ response: http.IncomingMessage; body: EzsignfolderSendV1Response;  }> {

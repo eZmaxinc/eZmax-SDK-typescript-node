@@ -36,7 +36,7 @@ export class EzsigndocumentResponseCompound {
     */
     'sEzsigndocumentName': string;
     /**
-    * The unique ID of the Ezsigntemplate
+    * The unique ID of the Ezsigndocument
     */
     'pkiEzsigndocumentID': number;
     'eEzsigndocumentStep': FieldEEzsigndocumentStep;
